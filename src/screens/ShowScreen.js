@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import { Text, View, TouchableOpacity } from 'react-native';
 import { EvilIcons } from '@expo/vector-icons';
 import { Context as blogContext } from '../context/BlogContext';
 
@@ -30,5 +30,3 @@ ShowScreen.navigationOptions = ({ navigation }) => ({
     </TouchableOpacity>
   ),
 });
-
-const styles = StyleSheet.create({});
