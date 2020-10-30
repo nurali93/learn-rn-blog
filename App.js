@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { lazy } from 'react';
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
-import IndexScreen from './src/screens/IndexScreen';
-import ShowScreen from './src/screens/ShowScreen';
-import CreateScreen from './src/screens/CreateScreen';
-import EditScreen from './src/screens/EditScreen';
+const IndexScreen = lazy(() => import('./src/screens/IndexScreen'));
+const ShowScreen = lazy(() => import('./src/screens/ShowScreen'));
+const CreateScreen = lazy(() => import('./src/screens/CreateScreen'));
+const EditScreen = lazy(() => import('./src/screens/EditScreen'));
 import { Provider as BlogProvider } from './src/context/BlogContext';
 
 const navigator = createStackNavigator(
