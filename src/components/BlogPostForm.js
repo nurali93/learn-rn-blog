@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { StyleSheet, Text, View, TextInput, Button } from 'react-native';
-import PropTypes from 'prop-types';
 
 const styles = StyleSheet.create({
   input: {
